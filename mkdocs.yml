@@ -1,0 +1,69 @@
+site_name: IMEPAY Developer Documentation
+nav: 
+   - Introduction: index.md
+   - Andriod Sdk: andriod.md
+   - iOS Sdk: ios-sdk.md
+   - Plugins: plugin.md
+ 
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: "https://cdn.nayathegana.com/media/2025/08/15/eea878a644a848d79e6fcd4f826a3ac8.png"
+  icon:
+    logo: "img/icon"
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+  - style/custom.css
+  - style/extra.css
+docs_dir: content 
+site_dir: docs
+
+copyright: "Copyright &copy; 2025 IMEPAY  Limited"
+
+extra:
+  social:
+    - icon: "fontawesome/brands/github"
+      link: "https://github.com/khalti"
+    - icon: "fontawesome/brands/twitter"
+      link: "https://twitter.com/KhaltiOfficial"
+    - icon: "fontawesome/brands/linkedin"
+      link: "https://www.linkedin.com/company/khalti-digital-wallet"
+    - icon: "fontawesome/brands/facebook"
+      link: "https://facebook.com/khaltiofficial"
+    - icon: "fontawesome/brands/instagram"
+      link: "https://www.instagram.com/khaltiofficial/"
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences
+
+# Uncomment and install any necessary plugins if needed
+# plugins:
+#   - search
+#   - social
