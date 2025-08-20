@@ -1,0 +1,903 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../ios-sdk/">
+      
+      
+      
+      <link rel="icon" href="https://cdn.nayathegana.com/media/2025/08/15/eea878a644a848d79e6fcd4f826a3ac8.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>Plugins - IMEPAY Developer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+      <link rel="stylesheet" href="../style/custom.css">
+    
+      <link rel="stylesheet" href="../style/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#woo-commerce-wordpress" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="IMEPAY Developer Documentation" class="md-header__button md-logo" aria-label="IMEPAY Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="163" height="85.272" viewBox="0 0 163 85.272">
+  <g id="Group_10740" data-name="Group 10740" transform="translate(-6929 -171)">
+    <g id="Logo" transform="translate(6929 171)">
+      <path id="Path_47148" data-name="Path 47148" d="M141.787,5.345a1.622,1.622,0,0,1,1.266-.928C149.467,2.939,155.882,1.462,162.3.028A.7.7,0,0,1,162.8.07c.211.084.253.38.127.633l-1.14,2.152c-2.363,4.431-4.726,8.819-7.089,13.25a1.429,1.429,0,0,1-1.646.844,1.348,1.348,0,0,1-.675-.38c-1.688-1.6-3.334-3.207-5.064-4.853,4.769-3.545,9.537-7.089,14.306-10.592a.042.042,0,0,0-.043-.042c-5.274,3.08-10.549,6.119-15.824,9.2-1.224-1.224-2.49-2.405-3.714-3.587a1.842,1.842,0,0,1-.337-.633.255.255,0,0,1-.042-.169A1.463,1.463,0,0,0,141.787,5.345Z" fill="#ed1c24"/>
+      <path id="Path_47149" data-name="Path 47149" d="M146.387,16.612a1,1,0,0,1-1.477-.886c-.084-1.392-.127-2.785-.169-4.135v-.464c1.477,1.392,2.912,2.785,4.389,4.178-.127.084-.211.127-.338.211" fill="#ed1c24"/>
+      <path id="Path_47150" data-name="Path 47150" d="M89.756,51.046V24.672a5.991,5.991,0,0,1,1.688-4.6,6.45,6.45,0,0,1,4.684-1.6h7.723a6.78,6.78,0,0,1,4.009,1.013,5.906,5.906,0,0,1,2.447,4.9V36.192a6.573,6.573,0,0,1-1.561,4.558,6.135,6.135,0,0,1-4.727,2.279H93.765v8.018Zm4.135-14.516a2.456,2.456,0,0,0,.717,1.73,2.489,2.489,0,0,0,1.519.717h7.891a.629.629,0,0,0,.3-.042,2.283,2.283,0,0,0,1.983-1.941,1.318,1.318,0,0,0,.042-.464V24.461a2.024,2.024,0,0,0-.464-1.35,2.538,2.538,0,0,0-1.35-.549H96.8c-1.941,0-2.912.844-2.912,2.49V36.065A.806.806,0,0,0,93.892,36.529Z" fill="#ed1c24"/>
+      <path id="Path_47151" data-name="Path 47151" d="M112.333,36.445V33.491a8.824,8.824,0,0,1,1.434-5.317A5.589,5.589,0,0,1,118.62,25.9h10.128V24.208a1.734,1.734,0,0,0-.464-1.182,1.421,1.421,0,0,0-1.1-.506h-14.9V18.426h14.558c3.207,0,5.148,1.519,5.866,4.557.042.506.084.886.084,1.139v12.66a5.83,5.83,0,0,1-.886,3.123,5.786,5.786,0,0,1-5.106,3.123H118.62a5.881,5.881,0,0,1-3.544-1.266,7.036,7.036,0,0,1-2.406-3A7.688,7.688,0,0,1,112.333,36.445Zm5.148,2.152a5.126,5.126,0,0,0,2.321.38h5.57c2.279,0,3.376-.8,3.376-2.448V32.563c0-1.561-.971-2.448-2.87-2.616h-6.54c-1.941.211-2.912,1.1-2.912,2.616v3.967A2.037,2.037,0,0,0,117.481,38.6Z" fill="#ed1c24"/>
+      <path id="Path_47152" data-name="Path 47152" d="M134.782,51.046V46.953H149a2.3,2.3,0,0,0,2.026-2.616V43.028H140.774a5.909,5.909,0,0,1-5.992-5.992V18.469h4.093v17.47q0,3.038,2.912,3.038H148.2c1.9,0,2.828-.886,2.828-2.616V18.469h4.093V44.125a7.469,7.469,0,0,1-1.6,5.022,6.231,6.231,0,0,1-4.852,1.9Z" fill="#ed1c24"/>
+      <path id="Path_47153" data-name="Path 47153" d="M0,18.51H14.432v3.123H12.027a1.414,1.414,0,0,0-1.435,1.392v15.4a1.414,1.414,0,0,0,1.435,1.393h2.405v3.123H0V39.821H2.785A1.414,1.414,0,0,0,4.22,38.428v-15.4a1.414,1.414,0,0,0-1.435-1.392H0Z" fill="#ed1c24" fill-rule="evenodd"/>
+      <path id="Path_47154" data-name="Path 47154" d="M16.837,18.511H29.581l3.249,7.511,3.207,7.511,3.207-7.511,3.249-7.511h12.2v3.123H51.947a1.423,1.423,0,0,0-1.435,1.435V38.555a1.423,1.423,0,0,0,1.435,1.435H54.69v3H40.131V39.948h2.026a1.564,1.564,0,0,0,1.9-1.435l.084-14.348L36.08,42.986v.042H33.168v-.042L25.024,24.165l.084,14.348c.127,1.688,1.9,1.435,1.9,1.435h2.026v3.038h-12.2v-3h2.7a1.423,1.423,0,0,0,1.435-1.435V23.026a1.423,1.423,0,0,0-1.435-1.435h-2.7v-3.08Z" fill="#ed1c24" fill-rule="evenodd"/>
+      <path id="Path_47155" data-name="Path 47155" d="M83.764,42.986H57.221V39.948h2.7a1.423,1.423,0,0,0,1.435-1.435V23.026a1.423,1.423,0,0,0-1.435-1.435h-2.7V18.469H83.764v9.579H80.177a18.352,18.352,0,0,0-.97-4.642c-.8-1.815-4.347-1.688-4.347-1.688H67.771l-.042,7c4.684.084,5.908.338,5.613-4.093h3.545v11.6H73.341s0-.633-.084-2.616c-.084-2.152-3.418-1.646-5.486-1.6v7.764l7.68.042c3-.211,3.882-1.688,4.389-3.165a17.158,17.158,0,0,0,.422-4.136h3.545V42.986Z" fill="#ed1c24" fill-rule="evenodd"/>
+    </g>
+    <path id="Path_47156" data-name="Path 47156" d="M1.92-20.512H9.376a12.063,12.063,0,0,1,8.32,2.928,9.445,9.445,0,0,1,3.3,7.376A9.316,9.316,0,0,1,17.7-2.9,12.145,12.145,0,0,1,9.376,0H1.92Zm5.44,4.96V-4.96H9.312A6.356,6.356,0,0,0,13.68-6.416a4.894,4.894,0,0,0,1.648-3.856A4.836,4.836,0,0,0,13.664-14.1,6.417,6.417,0,0,0,9.28-15.552Zm31.3,7.584a9.22,9.22,0,0,1-.1,1.6H28.16a3.134,3.134,0,0,0,1.184,1.712,3.511,3.511,0,0,0,2.112.624,4.264,4.264,0,0,0,3.168-1.44l2.624,3.488a6.482,6.482,0,0,1-2.464,1.76,8.645,8.645,0,0,1-3.52.7,8.272,8.272,0,0,1-6.032-2.368,7.762,7.762,0,0,1-2.416-5.76A8.036,8.036,0,0,1,25.1-13.424a7.481,7.481,0,0,1,5.616-2.384,7.759,7.759,0,0,1,5.648,2.24A7.515,7.515,0,0,1,38.656-7.968Zm-7.84-3.52A2.554,2.554,0,0,0,28.256-9.5h5.12A2.491,2.491,0,0,0,30.816-11.488ZM44.224,0l-5.28-15.328h5.664L47.68-4.544l3.232-10.784h5.216L50.912,0ZM72.352-7.968a9.22,9.22,0,0,1-.1,1.6h-10.4A3.134,3.134,0,0,0,63.04-4.656a3.511,3.511,0,0,0,2.112.624,4.264,4.264,0,0,0,3.168-1.44l2.624,3.488A6.482,6.482,0,0,1,68.48-.224a8.645,8.645,0,0,1-3.52.7,8.272,8.272,0,0,1-6.032-2.368,7.762,7.762,0,0,1-2.416-5.76A8.036,8.036,0,0,1,58.8-13.424a7.481,7.481,0,0,1,5.616-2.384,7.759,7.759,0,0,1,5.648,2.24A7.515,7.515,0,0,1,72.352-7.968Zm-7.84-3.52A2.554,2.554,0,0,0,61.952-9.5h5.12A2.491,2.491,0,0,0,64.512-11.488ZM74.88-22.016h5.152V0H74.88ZM82.656-7.648a7.84,7.84,0,0,1,2.4-5.776,7.882,7.882,0,0,1,5.76-2.384,7.882,7.882,0,0,1,5.76,2.384,7.84,7.84,0,0,1,2.4,5.776,7.8,7.8,0,0,1-2.4,5.744A7.882,7.882,0,0,1,90.816.48,7.882,7.882,0,0,1,85.056-1.9,7.8,7.8,0,0,1,82.656-7.648ZM92.96-5.28a3.41,3.41,0,0,0,.864-2.368,3.41,3.41,0,0,0-.864-2.368,2.768,2.768,0,0,0-2.144-.96,2.768,2.768,0,0,0-2.144.96,3.41,3.41,0,0,0-.864,2.368A3.352,3.352,0,0,0,88.672-5.3a2.789,2.789,0,0,0,2.144.944A2.811,2.811,0,0,0,92.96-5.28Zm17.7-10.528a6.805,6.805,0,0,1,5.136,2.256A8.209,8.209,0,0,1,117.92-7.68a8.461,8.461,0,0,1-2.064,5.84,6.663,6.663,0,0,1-5.2,2.32,4.722,4.722,0,0,1-3.9-1.76V6.272H101.6v-21.6h5.152v1.44A4.732,4.732,0,0,1,110.656-15.808Zm-3.04,10.5a2.768,2.768,0,0,0,2.144.96,2.768,2.768,0,0,0,2.144-.96,3.41,3.41,0,0,0,.864-2.368,3.352,3.352,0,0,0-.864-2.352,2.789,2.789,0,0,0-2.144-.944,2.789,2.789,0,0,0-2.144.944,3.352,3.352,0,0,0-.864,2.352A3.41,3.41,0,0,0,107.616-5.312Zm27.872-2.656a9.221,9.221,0,0,1-.1,1.6h-10.4a3.134,3.134,0,0,0,1.184,1.712,3.511,3.511,0,0,0,2.112.624,4.264,4.264,0,0,0,3.168-1.44l2.624,3.488a6.482,6.482,0,0,1-2.464,1.76,8.645,8.645,0,0,1-3.52.7,8.272,8.272,0,0,1-6.032-2.368,7.762,7.762,0,0,1-2.416-5.76,8.036,8.036,0,0,1,2.288-5.776,7.481,7.481,0,0,1,5.616-2.384,7.759,7.759,0,0,1,5.648,2.24A7.515,7.515,0,0,1,135.488-7.968Zm-7.84-3.52a2.554,2.554,0,0,0-2.56,1.984h5.12A2.491,2.491,0,0,0,127.648-11.488Zm19.168-4.32a3.682,3.682,0,0,1,2.56.864l-2.112,4.864a3.024,3.024,0,0,0-2.08-.736,1.778,1.778,0,0,0-1.472.688,2.884,2.884,0,0,0-.544,1.84V0h-5.152V-15.328h5.152v2.368Q144.416-15.808,146.816-15.808ZM156.032.48a8.729,8.729,0,0,1-6.784-2.624l2.784-3.264a5.869,5.869,0,0,0,4.288,1.824q1.408,0,1.408-.864a.913.913,0,0,0-.576-.768,5.389,5.389,0,0,0-1.424-.512,13.866,13.866,0,0,1-1.856-.576,12.442,12.442,0,0,1-1.856-.88,4.024,4.024,0,0,1-1.424-1.472,4.419,4.419,0,0,1-.576-2.288,4.407,4.407,0,0,1,1.664-3.408,6.764,6.764,0,0,1,4.608-1.456q4.608,0,6.56,2.688l-2.816,3.008a4.525,4.525,0,0,0-3.584-1.632q-1.344,0-1.344.832,0,.512.8.848a12.822,12.822,0,0,0,1.92.608,17.24,17.24,0,0,1,2.256.72,4.423,4.423,0,0,1,1.936,1.52,4.4,4.4,0,0,1,.8,2.7A4.423,4.423,0,0,1,161.04-.976,7.7,7.7,0,0,1,156.032.48Z" transform="translate(6929 250)"/>
+  </g>
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IMEPAY Developer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Plugins
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IMEPAY Developer Documentation" class="md-nav__button md-logo" aria-label="IMEPAY Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="163" height="85.272" viewBox="0 0 163 85.272">
+  <g id="Group_10740" data-name="Group 10740" transform="translate(-6929 -171)">
+    <g id="Logo" transform="translate(6929 171)">
+      <path id="Path_47148" data-name="Path 47148" d="M141.787,5.345a1.622,1.622,0,0,1,1.266-.928C149.467,2.939,155.882,1.462,162.3.028A.7.7,0,0,1,162.8.07c.211.084.253.38.127.633l-1.14,2.152c-2.363,4.431-4.726,8.819-7.089,13.25a1.429,1.429,0,0,1-1.646.844,1.348,1.348,0,0,1-.675-.38c-1.688-1.6-3.334-3.207-5.064-4.853,4.769-3.545,9.537-7.089,14.306-10.592a.042.042,0,0,0-.043-.042c-5.274,3.08-10.549,6.119-15.824,9.2-1.224-1.224-2.49-2.405-3.714-3.587a1.842,1.842,0,0,1-.337-.633.255.255,0,0,1-.042-.169A1.463,1.463,0,0,0,141.787,5.345Z" fill="#ed1c24"/>
+      <path id="Path_47149" data-name="Path 47149" d="M146.387,16.612a1,1,0,0,1-1.477-.886c-.084-1.392-.127-2.785-.169-4.135v-.464c1.477,1.392,2.912,2.785,4.389,4.178-.127.084-.211.127-.338.211" fill="#ed1c24"/>
+      <path id="Path_47150" data-name="Path 47150" d="M89.756,51.046V24.672a5.991,5.991,0,0,1,1.688-4.6,6.45,6.45,0,0,1,4.684-1.6h7.723a6.78,6.78,0,0,1,4.009,1.013,5.906,5.906,0,0,1,2.447,4.9V36.192a6.573,6.573,0,0,1-1.561,4.558,6.135,6.135,0,0,1-4.727,2.279H93.765v8.018Zm4.135-14.516a2.456,2.456,0,0,0,.717,1.73,2.489,2.489,0,0,0,1.519.717h7.891a.629.629,0,0,0,.3-.042,2.283,2.283,0,0,0,1.983-1.941,1.318,1.318,0,0,0,.042-.464V24.461a2.024,2.024,0,0,0-.464-1.35,2.538,2.538,0,0,0-1.35-.549H96.8c-1.941,0-2.912.844-2.912,2.49V36.065A.806.806,0,0,0,93.892,36.529Z" fill="#ed1c24"/>
+      <path id="Path_47151" data-name="Path 47151" d="M112.333,36.445V33.491a8.824,8.824,0,0,1,1.434-5.317A5.589,5.589,0,0,1,118.62,25.9h10.128V24.208a1.734,1.734,0,0,0-.464-1.182,1.421,1.421,0,0,0-1.1-.506h-14.9V18.426h14.558c3.207,0,5.148,1.519,5.866,4.557.042.506.084.886.084,1.139v12.66a5.83,5.83,0,0,1-.886,3.123,5.786,5.786,0,0,1-5.106,3.123H118.62a5.881,5.881,0,0,1-3.544-1.266,7.036,7.036,0,0,1-2.406-3A7.688,7.688,0,0,1,112.333,36.445Zm5.148,2.152a5.126,5.126,0,0,0,2.321.38h5.57c2.279,0,3.376-.8,3.376-2.448V32.563c0-1.561-.971-2.448-2.87-2.616h-6.54c-1.941.211-2.912,1.1-2.912,2.616v3.967A2.037,2.037,0,0,0,117.481,38.6Z" fill="#ed1c24"/>
+      <path id="Path_47152" data-name="Path 47152" d="M134.782,51.046V46.953H149a2.3,2.3,0,0,0,2.026-2.616V43.028H140.774a5.909,5.909,0,0,1-5.992-5.992V18.469h4.093v17.47q0,3.038,2.912,3.038H148.2c1.9,0,2.828-.886,2.828-2.616V18.469h4.093V44.125a7.469,7.469,0,0,1-1.6,5.022,6.231,6.231,0,0,1-4.852,1.9Z" fill="#ed1c24"/>
+      <path id="Path_47153" data-name="Path 47153" d="M0,18.51H14.432v3.123H12.027a1.414,1.414,0,0,0-1.435,1.392v15.4a1.414,1.414,0,0,0,1.435,1.393h2.405v3.123H0V39.821H2.785A1.414,1.414,0,0,0,4.22,38.428v-15.4a1.414,1.414,0,0,0-1.435-1.392H0Z" fill="#ed1c24" fill-rule="evenodd"/>
+      <path id="Path_47154" data-name="Path 47154" d="M16.837,18.511H29.581l3.249,7.511,3.207,7.511,3.207-7.511,3.249-7.511h12.2v3.123H51.947a1.423,1.423,0,0,0-1.435,1.435V38.555a1.423,1.423,0,0,0,1.435,1.435H54.69v3H40.131V39.948h2.026a1.564,1.564,0,0,0,1.9-1.435l.084-14.348L36.08,42.986v.042H33.168v-.042L25.024,24.165l.084,14.348c.127,1.688,1.9,1.435,1.9,1.435h2.026v3.038h-12.2v-3h2.7a1.423,1.423,0,0,0,1.435-1.435V23.026a1.423,1.423,0,0,0-1.435-1.435h-2.7v-3.08Z" fill="#ed1c24" fill-rule="evenodd"/>
+      <path id="Path_47155" data-name="Path 47155" d="M83.764,42.986H57.221V39.948h2.7a1.423,1.423,0,0,0,1.435-1.435V23.026a1.423,1.423,0,0,0-1.435-1.435h-2.7V18.469H83.764v9.579H80.177a18.352,18.352,0,0,0-.97-4.642c-.8-1.815-4.347-1.688-4.347-1.688H67.771l-.042,7c4.684.084,5.908.338,5.613-4.093h3.545v11.6H73.341s0-.633-.084-2.616c-.084-2.152-3.418-1.646-5.486-1.6v7.764l7.68.042c3-.211,3.882-1.688,4.389-3.165a17.158,17.158,0,0,0,.422-4.136h3.545V42.986Z" fill="#ed1c24" fill-rule="evenodd"/>
+    </g>
+    <path id="Path_47156" data-name="Path 47156" d="M1.92-20.512H9.376a12.063,12.063,0,0,1,8.32,2.928,9.445,9.445,0,0,1,3.3,7.376A9.316,9.316,0,0,1,17.7-2.9,12.145,12.145,0,0,1,9.376,0H1.92Zm5.44,4.96V-4.96H9.312A6.356,6.356,0,0,0,13.68-6.416a4.894,4.894,0,0,0,1.648-3.856A4.836,4.836,0,0,0,13.664-14.1,6.417,6.417,0,0,0,9.28-15.552Zm31.3,7.584a9.22,9.22,0,0,1-.1,1.6H28.16a3.134,3.134,0,0,0,1.184,1.712,3.511,3.511,0,0,0,2.112.624,4.264,4.264,0,0,0,3.168-1.44l2.624,3.488a6.482,6.482,0,0,1-2.464,1.76,8.645,8.645,0,0,1-3.52.7,8.272,8.272,0,0,1-6.032-2.368,7.762,7.762,0,0,1-2.416-5.76A8.036,8.036,0,0,1,25.1-13.424a7.481,7.481,0,0,1,5.616-2.384,7.759,7.759,0,0,1,5.648,2.24A7.515,7.515,0,0,1,38.656-7.968Zm-7.84-3.52A2.554,2.554,0,0,0,28.256-9.5h5.12A2.491,2.491,0,0,0,30.816-11.488ZM44.224,0l-5.28-15.328h5.664L47.68-4.544l3.232-10.784h5.216L50.912,0ZM72.352-7.968a9.22,9.22,0,0,1-.1,1.6h-10.4A3.134,3.134,0,0,0,63.04-4.656a3.511,3.511,0,0,0,2.112.624,4.264,4.264,0,0,0,3.168-1.44l2.624,3.488A6.482,6.482,0,0,1,68.48-.224a8.645,8.645,0,0,1-3.52.7,8.272,8.272,0,0,1-6.032-2.368,7.762,7.762,0,0,1-2.416-5.76A8.036,8.036,0,0,1,58.8-13.424a7.481,7.481,0,0,1,5.616-2.384,7.759,7.759,0,0,1,5.648,2.24A7.515,7.515,0,0,1,72.352-7.968Zm-7.84-3.52A2.554,2.554,0,0,0,61.952-9.5h5.12A2.491,2.491,0,0,0,64.512-11.488ZM74.88-22.016h5.152V0H74.88ZM82.656-7.648a7.84,7.84,0,0,1,2.4-5.776,7.882,7.882,0,0,1,5.76-2.384,7.882,7.882,0,0,1,5.76,2.384,7.84,7.84,0,0,1,2.4,5.776,7.8,7.8,0,0,1-2.4,5.744A7.882,7.882,0,0,1,90.816.48,7.882,7.882,0,0,1,85.056-1.9,7.8,7.8,0,0,1,82.656-7.648ZM92.96-5.28a3.41,3.41,0,0,0,.864-2.368,3.41,3.41,0,0,0-.864-2.368,2.768,2.768,0,0,0-2.144-.96,2.768,2.768,0,0,0-2.144.96,3.41,3.41,0,0,0-.864,2.368A3.352,3.352,0,0,0,88.672-5.3a2.789,2.789,0,0,0,2.144.944A2.811,2.811,0,0,0,92.96-5.28Zm17.7-10.528a6.805,6.805,0,0,1,5.136,2.256A8.209,8.209,0,0,1,117.92-7.68a8.461,8.461,0,0,1-2.064,5.84,6.663,6.663,0,0,1-5.2,2.32,4.722,4.722,0,0,1-3.9-1.76V6.272H101.6v-21.6h5.152v1.44A4.732,4.732,0,0,1,110.656-15.808Zm-3.04,10.5a2.768,2.768,0,0,0,2.144.96,2.768,2.768,0,0,0,2.144-.96,3.41,3.41,0,0,0,.864-2.368,3.352,3.352,0,0,0-.864-2.352,2.789,2.789,0,0,0-2.144-.944,2.789,2.789,0,0,0-2.144.944,3.352,3.352,0,0,0-.864,2.352A3.41,3.41,0,0,0,107.616-5.312Zm27.872-2.656a9.221,9.221,0,0,1-.1,1.6h-10.4a3.134,3.134,0,0,0,1.184,1.712,3.511,3.511,0,0,0,2.112.624,4.264,4.264,0,0,0,3.168-1.44l2.624,3.488a6.482,6.482,0,0,1-2.464,1.76,8.645,8.645,0,0,1-3.52.7,8.272,8.272,0,0,1-6.032-2.368,7.762,7.762,0,0,1-2.416-5.76,8.036,8.036,0,0,1,2.288-5.776,7.481,7.481,0,0,1,5.616-2.384,7.759,7.759,0,0,1,5.648,2.24A7.515,7.515,0,0,1,135.488-7.968Zm-7.84-3.52a2.554,2.554,0,0,0-2.56,1.984h5.12A2.491,2.491,0,0,0,127.648-11.488Zm19.168-4.32a3.682,3.682,0,0,1,2.56.864l-2.112,4.864a3.024,3.024,0,0,0-2.08-.736,1.778,1.778,0,0,0-1.472.688,2.884,2.884,0,0,0-.544,1.84V0h-5.152V-15.328h5.152v2.368Q144.416-15.808,146.816-15.808ZM156.032.48a8.729,8.729,0,0,1-6.784-2.624l2.784-3.264a5.869,5.869,0,0,0,4.288,1.824q1.408,0,1.408-.864a.913.913,0,0,0-.576-.768,5.389,5.389,0,0,0-1.424-.512,13.866,13.866,0,0,1-1.856-.576,12.442,12.442,0,0,1-1.856-.88,4.024,4.024,0,0,1-1.424-1.472,4.419,4.419,0,0,1-.576-2.288,4.407,4.407,0,0,1,1.664-3.408,6.764,6.764,0,0,1,4.608-1.456q4.608,0,6.56,2.688l-2.816,3.008a4.525,4.525,0,0,0-3.584-1.632q-1.344,0-1.344.832,0,.512.8.848a12.822,12.822,0,0,0,1.92.608,17.24,17.24,0,0,1,2.256.72,4.423,4.423,0,0,1,1.936,1.52,4.4,4.4,0,0,1,.8,2.7A4.423,4.423,0,0,1,161.04-.976,7.7,7.7,0,0,1,156.032.48Z" transform="translate(6929 250)"/>
+  </g>
+</svg>
+
+    </a>
+    IMEPAY Developer Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../andriod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Andriod Sdk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ios-sdk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iOS Sdk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Plugins
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Plugins
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#woo-commerce-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Woo Commerce WordPress
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Woo Commerce WordPress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ime-pay-checkout-process-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      IME pay Checkout Process Overview:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps-in-ime-pay-checkout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps in IME pay Checkout:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-woo-commerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download woo commerce:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ime-pay-whmcs-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      IME pay WHMCS Plugin
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IME pay WHMCS Plugin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ime-pay-checkout-process-overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      IME pay Checkout Process Overview:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps-in-ime-pay-checkout_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps in IME pay Checkout:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-whmcs-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download WHMCS Plugin :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contacts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#woo-commerce-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Woo Commerce WordPress
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Woo Commerce WordPress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ime-pay-checkout-process-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      IME pay Checkout Process Overview:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps-in-ime-pay-checkout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps in IME pay Checkout:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-woo-commerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download woo commerce:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ime-pay-whmcs-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      IME pay WHMCS Plugin
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IME pay WHMCS Plugin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ime-pay-checkout-process-overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      IME pay Checkout Process Overview:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps-in-ime-pay-checkout_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps in IME pay Checkout:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-whmcs-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download WHMCS Plugin :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contacts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Plugins</h1>
+
+<h2 id="woo-commerce-wordpress">Woo Commerce WordPress<a class="headerlink" href="#woo-commerce-wordpress" title="Permanent link">&para;</a></h2>
+<h3 id="ime-pay-checkout-process-overview">IME pay Checkout Process Overview:<a class="headerlink" href="#ime-pay-checkout-process-overview" title="Permanent link">&para;</a></h3>
+<p>This document describes the process for successfully integrating IME pay into your transaction
+process, explaining how to facilitate communication between your Woo commerce built website
+and the IME pay, and how to setup the plugin.</p>
+<p>IME Pay checkout process will be completed in 4 to 5 steps.</p>
+<h3 id="steps-in-ime-pay-checkout">Steps in IME pay Checkout:<a class="headerlink" href="#steps-in-ime-pay-checkout" title="Permanent link">&para;</a></h3>
+<p><strong>STEP 1</strong></p>
+<p>The first step involves process of installing up IME pay Woo Commerce Plugin. Merchant needs
+to setup the plugin to their WordPress website. The process involved are:</p>
+<ol>
+<li>Download the ZIP file provided by IMEPAY</li>
+<li>Go to the plugin section in your WordPress admin dashboard</li>
+<li>Click on Add New and upload the zip file of IMEPAY Woo Commerce plugin and
+    upload it.</li>
+<li>After Upload click on install now and activate the plugin.</li>
+</ol>
+<p><strong>STEP 2</strong></p>
+<p>The Second step involves process of Setting up IME pay Woo Commerce Plugin.
+Merchant needs to setup the plugin to their WordPress website. The process involved are</p>
+<ol>
+<li>After installation is complete, go to Woo Commerce &gt; Settings.</li>
+<li>Go to Payments option where you can find IMEPAY among other payment gateways</li>
+<li>Click on IMEPAY option and enter your test or live credentials accordingly provided
+    by IMEPAY (Shown below).</li>
+</ol>
+<p>Parameters:</p>
+<ol>
+<li>Enable / Disable: To make the plugin working you need to make sure “Enable
+    imepay payment” is ticked.</li>
+<li>Title: Display name refers to the name that your users see at the time of payment.
+    (Name could be your choice. E.g. IMEPAY or IMEPAY gateway).</li>
+<li>Description: In the description field you can add any text you want that describes
+    the payment gateway perfectly.</li>
+<li>IME Username: API username is your merchant username provided by IMEPAY
+    itself during registration.</li>
+<li>Password Code: User Password is the password of your merchant username.</li>
+<li>Merchant Code: Merchant code is the unique code provided to you to represent
+    your business by IMEPAY during registration</li>
+<li>Module Name: Module Name is provided by IMEPAY at the time of registration.</li>
+<li>Invoice Prefix: You can add any prefix text or number that you want to give to the
+    invoice number. (You can also leave the field blank).</li>
+<li>Sand Box Mode: Sand Box mode enables you to test the API without spending any
+    money for checking the API. If you enable the test mode, you should fill all above
+    credentials (API Username, Merchant Code, User Password Key and Module
+    Name) according to the test credentials provided by IMEPAY.</li>
+</ol>
+<p>NOTE: Currency for processing: You need to select NPR if you have setup multiple
+currency in your Woo commerce website</p>
+<p>After all above setup you can create a demo product and begin testing. The expected output
+is shown below of process involved in buying a product and choosing IME pay as payment
+gateway.</p>
+<p><strong>STEP 3</strong></p>
+<p>Merchant’s page is redirected to IME pay Web Checkout page. It initially validates the TokenId
+against the MerchantCode, RefId, and Amount sent. In case of failure, error page is displayed. If
+successful, customer wallet account input form is displayed. Customer verifies transaction
+amount, and Merchant Name, if satisfied, enters wallet id and PIN (Personal Identification
+Number) associated with IME pay and clicks “Proceed Pay” button.</p>
+<p>Note:
+If customer is not satisfied with the payment details, he/she can abort the operation by closing
+the window or by clicking the Cancel Pay button. If Cancel pay button is pressed, customer will
+be redirected to the invoice page of the order.</p>
+<p><strong>STEP 4</strong></p>
+<p>If combination of entered mobile number and PIN is correct, customer will receive SMS in his/her
+mobile containing OTP (One Time Password). Customer then must enter the OTP and press
+Confirm Pay button to process the transaction.</p>
+<p>Note:
+If customer decides to cancel the transaction in this stage, he/she can abort the operation by
+closing the window or by clicking the Cancel Pay button. If Cancel pay button is pressed,
+customer will be redirected to the invoice page of the order.</p>
+<h3 id="download-woo-commerce">Download woo commerce:<a class="headerlink" href="#download-woo-commerce" title="Permanent link">&para;</a></h3>
+<p><a href="/assets/IME%20Pay%20WooCommerce%20Plugin%20V1.1.zip" title=":ignore click to download woo commerce file">click here</a></p>
+<h2 id="ime-pay-whmcs-plugin">IME pay WHMCS Plugin<a class="headerlink" href="#ime-pay-whmcs-plugin" title="Permanent link">&para;</a></h2>
+<h3 id="ime-pay-checkout-process-overview_1">IME pay Checkout Process Overview:<a class="headerlink" href="#ime-pay-checkout-process-overview_1" title="Permanent link">&para;</a></h3>
+<p>This document describes the process for successfully integrating IME pay into your transaction
+process, explaining how to facilitate communication between your Woo commerce built website
+and the IME pay, and how to setup the plugin.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>IME Pay checkout process will be completed in 4 to 5 steps.
+</code></pre></div>
+<h3 id="steps-in-ime-pay-checkout_1">Steps in IME pay Checkout:<a class="headerlink" href="#steps-in-ime-pay-checkout_1" title="Permanent link">&para;</a></h3>
+<p><strong>STEP 1</strong></p>
+<p>The first step involves process of installing up IME pay WHMCS Plugin. Merchant needs to
+setup the plugin to their WHMCS website. The process involved are:
+1) Download the ZIP file provided by IMEPAY
+2) Simply extract at the root folder of your WHMCS installation. Following files should be
+copied in following directories.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>File Structure
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>modules /
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>| gateways /
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>| imegateway.php^1
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>| callback /
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>| imegateway.php 2
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>| imegateway /
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>| imelogo.png^3
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>1. Inside your WHMCS installation folder you find the modules folder and following by,
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>you get gateways folder.
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>2. You need to add imegateway.php^1 file from the extracted zip to that very same folder.
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>3. Secondly create an imegateway folder inside it and add imelogo.png^3 file.
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>4. Navigate to the callback folder inside gateways folder and upload the callback file named
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>imegateway.php^2 from the callback folder of provided zip.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>[Numbers represents file from above file structure]
+</code></pre></div></p>
+<blockquote>
+<p>Note:
+For the Imepay payment gateway module to work, your website hosting server need to have
+enable the 7979 TCP port and have whitelisted 202.1 6 6.194. 90 Further again if the plugin is
+not working you need to contact IME Pay support team and ask them to whitelist your website
+IP address.</p>
+</blockquote>
+<p><strong>STEP 2</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Login to admin area of your WHMCS installation and enable the gateway from Setup -
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>&gt; Payments - &gt; Payment Gateways (Refer to the image below)
+</code></pre></div>
+1. Go to Payments option where you can find IMEPAY among other payment gateways
+2. Click on IMEPAY option and enter your test or live credentials accordingly provided
+    by IMEPAY (Shown below).</p>
+<ol>
+<li>Once the gateway is enabled, the gateway parameters need to be configured.
+    Navigate to manage existing Gateways (Refer to the image below)</li>
+</ol>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Parameters:
+</code></pre></div>
+1. Display Name: Display name refers to the name that your users see at the time of
+    payment. (Name could be your choice. E.g. IMEPAY or IMEPAY gateway)
+2. API Username: API username is your merchant username provided by IMEPAY itself
+    during registration
+3. Merchant Code: Merchant code is the unique code provided to you to represent your
+    business by IMEPAY during registration
+4. User Password Key: User Password is the password of your merchant username.
+5. Module Name: Module Name is provided by IMEPAY at the time of registration.
+6. Test Mode: Test mode enables you to test the API without spending any money for
+    checking the API. If you enable the test mode, you should fill all above credentials (API
+    Username, Merchant Code, User Password Key and Module Name) according to the test
+    credentials provided by IMEPAY.
+7. Convert for processing: You need to select NPR if you have setup multiple currency in
+    your WHMCS panel.</p>
+<p>(^)
+Note:</p>
+<ol>
+<li>Please make sure that the currency "NPR" is selected for the option "Convert to For
+    Processing".</li>
+<li>If you are using test mode, then the credentials should be filled accordingly.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>After all above setup you can create a demo product and begin testing. The expected output is shown
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>below of process involved in buying a product and choosing IME pay as payment gateway.
+</code></pre></div>
+<p><strong>STEP 3</strong></p>
+<p>Merchant’s page is redirected to IME pay Web Checkout page. It initially validates the TokenId
+against the MerchantCode, RefId, and Amount sent. In case of failure, error page is displayed. If
+successful, customer wallet account input form is displayed. Customer verifies transaction
+amount, and Merchant Name, if satisfied, enters wallet id and PIN (Personal Identification
+Number) associated with IME pay and clicks “Proceed Pay” button.</p>
+<p>Note:
+If customer is not satisfied with the payment details, he/she can abort the operation by closing
+the window or by clicking the Cancel Pay button. If Cancel pay button is pressed by the
+customers, they will be redirected to the invoice page of the order section immediately.</p>
+<p><strong>STEP 4</strong></p>
+<p>If combination of entered mobile number and PIN is correct, customer will receive SMS in his/her
+mobile containing OTP (One Time Password). Customer then must enter the OTP and press
+Confirm Pay button to process the transaction.</p>
+<p>Note:
+If customer decides to cancel the transaction in this stage, he/she can abort the operation by
+closing the window or by clicking the Cancel Pay button. If Cancel pay button is pressed,
+customer will be redirected to the invoice page of the order.</p>
+<h3 id="download-whmcs-plugin">Download WHMCS Plugin :<a class="headerlink" href="#download-whmcs-plugin" title="Permanent link">&para;</a></h3>
+<p><a href="/assets/IME%20Pay-whmcs%20V1.0.zip" title=":ignore click to download whmcs file">click here</a></p>
+<h3 id="contacts">Contacts<a class="headerlink" href="#contacts" title="Permanent link">&para;</a></h3>
+<p>Rajesh Shrestha - Business Analyst
+rajesh.shrestha@imeremit.com.np
+Ph. 9801190734</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 IME Digital Solution Limited
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/khalti" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/KhaltiOfficial" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/khalti-digital-wallet" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://facebook.com/khaltiofficial" target="_blank" rel="noopener" title="facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/khaltiofficial/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
