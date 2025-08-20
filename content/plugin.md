@@ -14,7 +14,7 @@ IME Pay checkout process will be completed in 4 to 5 steps.
 
 ### Steps in IME pay Checkout:
 
-### STEP 1
+**STEP 1**
 
 The first step involves process of installing up IME pay Woo Commerce Plugin. Merchant needs
 to setup the plugin to their WordPress website. The process involved are:
@@ -25,7 +25,7 @@ to setup the plugin to their WordPress website. The process involved are:
     upload it.
 4. After Upload click on install now and activate the plugin.
 
-### STEP 2
+**STEP 2**
 
 The Second step involves process of Setting up IME pay Woo Commerce Plugin.
 Merchant needs to setup the plugin to their WordPress website. The process involved are
@@ -65,7 +65,7 @@ is shown below of process involved in buying a product and choosing IME pay as p
 gateway.
 
 
-### STEP 3
+**STEP 3**
 
 Merchant’s page is redirected to IME pay Web Checkout page. It initially validates the TokenId
 against the MerchantCode, RefId, and Amount sent. In case of failure, error page is displayed. If
@@ -79,7 +79,7 @@ the window or by clicking the Cancel Pay button. If Cancel pay button is pressed
 be redirected to the invoice page of the order.
 
 
-### STEP 4
+**STEP 4**
 
 If combination of entered mobile number and PIN is correct, customer will receive SMS in his/her
 mobile containing OTP (One Time Password). Customer then must enter the OTP and press
@@ -109,7 +109,7 @@ IME Pay checkout process will be completed in 4 to 5 steps.
 
 ### Steps in IME pay Checkout:
 
-### STEP 1
+**STEP 1**
 
 The first step involves process of installing up IME pay WHMCS Plugin. Merchant needs to
 setup the plugin to their WHMCS website. The process involved are:
@@ -148,7 +148,7 @@ not working you need to contact IME Pay support team and ask them to whitelist y
 IP address.
 
 
-### STEP 2
+ **STEP 2**
 
 ```
 Login to admin area of your WHMCS installation and enable the gateway from Setup -
@@ -192,7 +192,7 @@ After all above setup you can create a demo product and begin testing. The expec
 below of process involved in buying a product and choosing IME pay as payment gateway.
 ```
 
-### STEP 3
+**STEP 3**
 
 Merchant’s page is redirected to IME pay Web Checkout page. It initially validates the TokenId
 against the MerchantCode, RefId, and Amount sent. In case of failure, error page is displayed. If
@@ -206,7 +206,7 @@ the window or by clicking the Cancel Pay button. If Cancel pay button is pressed
 customers, they will be redirected to the invoice page of the order section immediately.
 
 
-### STEP 4
+**STEP 4**
 
 If combination of entered mobile number and PIN is correct, customer will receive SMS in his/her
 mobile containing OTP (One Time Password). Customer then must enter the OTP and press
