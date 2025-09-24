@@ -95,7 +95,7 @@ Kindly read the T&C carefully before proceeding.
 
 1. Customer and wallet information is confidential unless required by law.  
 2. No third-party sharing without user consent. Without consent, IME Digital may withdraw services.  
-3. Privacy Policy: [developer.imepay.com.np/#/privacy-policy](https://developer.imepay.com.np/privacy-policy)
+3. Privacy Policy: [developer.imepay.com.np/privacy-policy](https://developer.imepay.com.np/privacy-policy)
 
 ---
 
@@ -137,7 +137,7 @@ Kindly read the T&C carefully before proceeding.
 
 1. Commission/service charges as per IME Digital’s schedule.  
 2. Daily/monthly limits per Nepal Rastra Bank guidelines.  
-   Details: [Charge-and-Commission-Details.pdf](https://blog.IME%20Pay.com.np/wp-content/uploads/2022/08/Charge-and-Commission-Details.pdf)  
+   Details: [Charge-and-Commission-Details.pdf](https://khaltibyime.khalti.com/wp-content/uploads/2025/09/Charge-and-Commission-Details.pdf)  
 3. Per-transaction limit as per NRB directives.
 
 ---
